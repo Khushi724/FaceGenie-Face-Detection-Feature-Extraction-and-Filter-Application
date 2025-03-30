@@ -20,6 +20,18 @@ pip install opencv-python numpy dlib
 
 Additionally, download the Dlib pre-trained facial landmark model `shape_predictor_68_face_landmarks.dat` from [Dlib's Model Repository](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2). Extract and place the file in the project directory.
 
+### Important Note on Dlib Compatibility
+Dlib is known to work best with older versions of Python (e.g., Python 3.6 or 3.7). If you encounter compatibility issues, consider setting up a virtual environment with an older Python version using the following steps:
+
+```bash
+# Create a virtual environment with Python 3.7
+python3 -m venv dlib_env
+source dlib_env/bin/activate  # On Windows, use: dlib_env\Scripts\activate
+pip install opencv-python numpy dlib
+```
+
+Ensure you activate the virtual environment before running the script.
+
 ## Usage
 ### Running the Application
 1. **Using a Webcam**:
